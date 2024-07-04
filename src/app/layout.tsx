@@ -1,24 +1,10 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Chatlog, Sidebar } from "@/components/chatlog"
-import { Provider } from "@/components/chatlog/context"
 import "../styles/global.scss"
 import "./layout.scss"
-import { Nav } from "@/components/navbar"
 import { PropsWithChildren } from "react"
 
 const inter = Inter({ subsets: ["latin"] });
-
-
-const Providers = ({ children }: PropsWithChildren ) => {
-
-	return <Provider>
-		{ children }
-	</Provider>
-}
-
-
-
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -32,10 +18,7 @@ export default function RootLayout({
 }>) {
 	return <html lang="en">
 		<body className={inter.className}>
-			<Providers>
-				<Chatlog />
-				{ children }
-			</Providers>
+			{ children }
 		</body>
 	</html>
 }

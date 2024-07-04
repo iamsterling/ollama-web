@@ -3,22 +3,10 @@
     width: 100%;
 
     overflow: hidden;
-
-
+    
+    
     body {
-        height: inherit;
-        width: inherit;
-
-        display: grid;
-        grid-template-columns: auto 3fr;
-        grid-template-rows: auto 3fr;
-
-        grid-template-areas:
-            "actions messages"
-            "links messages"
-            "input input"
-        
-        
+        background: hsla(var(--dark), 1);
         
         //  @media screen and (min-width: 900px) {
         //      background: red;

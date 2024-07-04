@@ -3,8 +3,9 @@ import { PropsWithChildren } from "react"
 const Layout = ({ children }: PropsWithChildren ) => {
 
 
-    return <>
+    return <div>
         { children }
-    </>
+    </div>
 }
+
 export default Layout

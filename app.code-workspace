@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "src/components"
+		},
+		{
+			"path": "src/app/chat"
 		}
 	],
 	"settings": {}
