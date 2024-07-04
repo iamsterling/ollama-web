@@ -1,0 +1,25 @@
+.avatar {
+    background: url("/ollama.png") center / contain no-repeat;
+    border-radius: 100rem;
+    background-color: red;
+    
+    &[data-size="sm"] {
+        --size: 2rem;
+    }
+    &[data-size="md"] {
+        --size: 2.5rem;
+    }
+    &[data-size="lg"] {
+        --size: 3rem;
+    }
+    &[data-size="xl"] {
+        --size: 3.5rem;
+    }
+
+
+    height: var(--size);
+    width: var(--size);
+    overflow: hidden;
+
+
+}

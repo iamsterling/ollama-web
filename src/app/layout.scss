@@ -1,0 +1,29 @@
+:root {
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+
+    body {
+        height: inherit;
+        width: inherit;
+
+        display: grid;
+        grid-template-columns: auto 3fr;
+        grid-template-rows: auto 3fr;
+
+        grid-template-areas:
+            "actions messages"
+            "links messages"
+            "input input"
+        
+        
+        
+        //  @media screen and (min-width: 900px) {
+        //      background: red;
+        //      grid-template-columns: auto 1fr;
+        //      grid-template-rows: 1fr 1fr;
+        //  }
+    }
+}

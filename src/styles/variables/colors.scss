@@ -1,0 +1,22 @@
+:root {
+    --color-primary:    68, 88%, 68%;
+    --color-secondary:  "";
+    --color-tertiary:   "";
+    --dark:             212, 18%, 9%;
+    --grey:             195, 5%, 54%;
+    --silver:           5, 6%, 73%;
+    --light:            70, 19%, 93%;
+
+    --bg-color:         hsla(var(--light), 1); 
+    --text-color:       hsla(var(--dark), 1);
+    
+    @media screen and (prefers-color-scheme: dark) {
+        --bg-color:     hsla(var(--dark), 1);
+        --text-color:   hsla(var(--light), 1)
+    }
+
+
+    --error-color:      red;
+    --warning-color:    yellow;
+    --success-color:    green;
+}

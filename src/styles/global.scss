@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import "./variables/variables.scss";
+
+
+:root {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
